@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FunkE Tech Blog</title>
-  <link rel="stylesheet" href="../../public/css/jass.css">
-  <link rel="stylesheet" href="../../public/css/style.css">
+  <link rel="stylesheet" href="/css/jass.css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 {{!-- main content of the webpage --}}
@@ -20,7 +20,7 @@
         <ul class="nav-list">
           {{!-- shown when logged in --}}
           {{#if logged_in}}
-          <li><a href="/homepage">Home</a></li>
+          <li><a href="/">Home</a></li>
           <li><a href="/dashboard">Dashboard</a></li>
           <li><button class="no-button" id="logout">Logout</button></li>
           {{!-- shown when logged out --}}
@@ -42,7 +42,7 @@
 
   <!-- Render script for logged in users only -->
   {{#if logged_in}}
-  <script src="../../public/js/logout.js"></script>
+  <script src="/js/logout.js"></script>
   {{/if}}
 </body>
 
