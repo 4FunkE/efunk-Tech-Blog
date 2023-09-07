@@ -1,3 +1,20 @@
+/* 
+blogPost
+
+blogPost-list
+
+new-blogPost-form
+
+row
+
+signup-form
+
+no-button
+
+login-form
+
+nav-list */
+
 html,
 body {
   min-height: 100%;
@@ -94,67 +111,135 @@ label {
   display: inline-block;
 }
 
+.align-center {
+  align-items: center;
+}
 
-align-center
+.btn {
+  text-align: center;
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  margin: 0;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  border: 1px solid transparent;
+  outline: none;
+  color: #1a1a1a;
+  background-color: #aeaeae;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
 
-blogPost
+.btn:hover {
+  background-color: #cecece;
+}
 
-blogPost-list
+.btn.btn-primary {
+  background-color: #2d3e50;
+  color: #d9e9e8;
+}
 
-new-blogPost-form
+.btn.btn-primary:hover {
+  background-color: #57779a;
+}
 
-btn
+.btn.btn-sm {
+  font-size: 0.85rem;
+  padding: 0.3rem 0.9rem;
+}
 
-btn-primary
+.btn.btn-danger {
+  background-color: #e64c66;
+  color: #ffffff;
+}
 
-btn-sm
+.btn.btn-danger:hover {
+  background-color: #ee8294;
+}
 
-btn-danger
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-no-button
+.container.container-fluid {
+  width: 92%;
+}
 
-container
+.col-auto {
+  flex-grow: 1;
+  flex-basis: 0;
+}
 
-container-fluid
+.display-flex {
+  display: flex !important;
+}
 
-col-auto
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
 
-col-md-4
+form {
+  width: 100%;
+}
 
-col-md-5
+form .form-group {
+  display: block;
+  width: 100%;
+  margin: 0.625rem 0;
+}
 
-col-md-6
+form .form-input {
+  display: block;
+}
 
-col-md-8
+.justify-space-around {
+  justify-content: space-around;
+}
 
-display-flex
+.justify-space-between {
+  justify-content: space-between;
+}
 
-flex-column
+.mb-2 {
+  margin-bottom: 0.625rem;
+}
 
-form
+.mb-4 {
+  margin-bottom: 1.375rem;
+}
 
-form-group
+.mt-4 {
+  margin-top: 1.375rem;
+}
 
-form-input
+.mt-5 {
+  margin-top: 1.625rem;
+}
 
-justify-space-around
+.p-2 {
+  padding: 0.625rem;
+}
 
-justify-space-between
-
-login-form
-
-mb-2
-
-mt-4
-
-mt-5
-
-mb-4
-
-nav-list
-
-p-2
-
-row
-
-signup-form
+@media screen and (min-width: 768px) {
+    .col-md-4 {
+      flex: 0 0 33.33333%;
+      max-width: 33.33333%;
+    }
+    .col-md-5 {
+      flex: 0 0 41.66667%;
+      max-width: 41.66667%;
+    }
+    .col-md-6 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    .col-md-8 {
+      flex: 0 0 66.66667%;
+      max-width: 66.66667%;
+    }
+}
