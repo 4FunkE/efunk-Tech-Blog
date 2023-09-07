@@ -8,14 +8,14 @@
   <div class="col-md-6">
     <h3>Create a New Blogpost:</h3>
 
-    <form class="form new-project-form">
+    <form class="form new-blogPost-form">
       <div class="form-group">
-        <label for="project-name">Title:</label>
-        <input class="form-input" type="text" id="project-name" name="project-name" />
+        <label for="blogPost-name">Title:</label>
+        <input class="form-input" type="text" id="blogPost-name" name="blogPost-name" />
       </div>
       <div class="form-group">
-        <label for="project-desc">description:</label>
-        <textarea class="form-input" id="project-desc" name="project-desc"></textarea>
+        <label for="blogPost-desc">description:</label>
+        <textarea class="form-input" id="blogPost-desc" name="blogPost-desc"></textarea>
       </div>
       <div class="form-group">
         <button type="submit" class="btn btn-primary">Post</button>
@@ -24,7 +24,7 @@
   </div>
 
   {{#if blogPost.length}}
-  <div class="col-md-6 project-list">
+  <div class="col-md-6 blogPost-list">
     <h3>Current Blogpost:</h3>
 
     {{#each blogPosts as |blogPost|}}
