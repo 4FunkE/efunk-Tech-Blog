@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
+{{!-- main content of the webpage --}}
 <body>
   <div class="flex-column justify-space-around">
     <header class="display-flex justify-space-between align-center p-2">
@@ -17,27 +18,31 @@
       </h1>
       <nav>
         <ul class="nav-list">
+          {{!-- shown when logged in --}}
           {{#if logged_in}}
-          <li><a href="/Home">Home</a></li>
-          <li><a href="/Dashboard">Dashboard</a></li>
+          <li><a href="/homepage">Home</a></li>
+          <li><a href="/dashboard">Dashboard</a></li>
           <li><button class="no-button" id="logout">Logout</button></li>
+          {{!-- shown when logged out --}}
           {{else}}
           <li><a href="/login">Login</a></li>
           {{/if}}
         </ul>
     </header>
+
+    {{!-- responsive contanier that will fill other handlebars layouts --}}
     <main class="container container-fluid mt-5">
       <!-- Render the sub layout -->
       {{{ body }}}
     </main>
-    <footer>
+    <footer class="flex-column justify-space-around">
       <p>FunkE information ONLY!</p>
     </footer>
   </div>
 
   <!-- Render script for logged in users only -->
   {{#if logged_in}}
-  <script src="/js/logout.js"></script>
+  <script src="/efunk-Tech-Blog/public/js/logout.js"></script>
   {{/if}}
 </body>
 

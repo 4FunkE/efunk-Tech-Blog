@@ -1,11 +1,13 @@
 <div class="row">
   <div class="col-auto">
+    {{!-- Welcome User by name --}}
     <h2>Welcome, {{name}}!</h2>
   </div>
 </div>
 
 <div class="row mt-4">
   <div class="col-md-6">
+    {{!-- Create a New Blogpost Form --}}
     <h3>Create a New Blogpost:</h3>
 
     <form class="form new-blogPost-form">
@@ -23,6 +25,7 @@
     </form>
   </div>
 
+{{!-- conditional rendering of current blog posts --}}
   {{#if blogPost.length}}
   <div class="col-md-6 blogPost-list">
     <h3>Current Blogpost:</h3>
@@ -30,7 +33,7 @@
     {{#each blogPosts as |blogPost|}}
     <div class="row mb-2">
       <div class="col-md-8">
-        <h4><a href="/blogPost/{{blogPost.id}}">{{blogPost.name}}</a></h4>
+        <h4><a href="/post/{{blogPost.id}}">{{blogPost.name}}</a></h4>
       </div>
       <div class="col-md-4">
         <button class="btn btn-sm btn-danger" data-id="{{blogPost.id}}">DELETE</button>
