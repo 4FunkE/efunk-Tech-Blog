@@ -26,14 +26,14 @@
   </div>
 
 {{!-- conditional rendering of current blog posts --}}
-  {{#if blogPost.length}}
+  {{#if blogPosts.length}}
   <div class="col-md-6 blogPost-list">
     <h3>Current Blogpost:</h3>
 
     {{#each blogPosts as |blogPost|}}
     <div class="row mb-2">
       <div class="col-md-8">
-        <h4><a href="/post/{{blogPost.id}}">{{blogPost.name}}</a></h4>
+        <h4><a href="/blogPost/{{blogPost.id}}">{{blogPost.name}}</a></h4>
       </div>
       <div class="col-md-4">
         <button class="btn btn-sm btn-danger" data-id="{{blogPost.id}}">DELETE</button>
@@ -44,4 +44,4 @@
   {{/if}}
 </div>
 
-<script src="../public/js/dashboard.js"></script>
+<script src="./js/dashboard.js"></script>
