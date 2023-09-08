@@ -2,12 +2,25 @@
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+### Motivation
+I was inspired to create this tech blog application to provide a platform for individuals interested in technology. Whether they want to learn, share their insights, or simply stay updated with the tech world, this application offers a space for it all.
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+### Purpose
+The primary objective of this project is to foster a sense of community within the tech community. By building this application, I aimed to facilitate the sharing of tech-related thoughts, knowledge, and experiences. It serves as a hub where tech enthusiasts can collaborate, educate, and explore new ideas.
+
+### Problem Solving
+One of the core issues this project addresses is the fragmentation of tech-related information across various platforms. It consolidates all things tech into one place, making it easier for visitors to fulfill their tech needs. Instead of searching multiple sources, they can find valuable content and discussions here.
+
+### Learning Experience
+Throughout the development of this project, I gained valuable knowledge and experience in several key areas:
+
+- Implementing the MVC (Model-View-Controller) architectural pattern to structure the application.
+- Utilizing Handlebars.js as the templating language for rendering dynamic content.
+- Employing Sequelize as the ORM (Object-Relational Mapping) tool for database management.
+- Implementing user authentication and session management using the express-session npm package.
+- Enhancing my understanding of Heroku deployment for hosting web applications.
+
+By learning and applying these technologies and concepts, I not only built a functional tech blog application but also enhanced my skills as a developer.
 
 ## Table of Contents
 
@@ -88,18 +101,11 @@ This project was developed using the following technologies and tools:
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
-
 Collaborators: 
 - AskBCS Learning Assistants
 - Andrew Bautista-Instructor
 - Will-TA
-- Daniel Miranda: https://github.com/djamiranda
-- Starter code provided by [miniture-eureka](https://github.com/coding-boot-camp/miniature-eureka)
+- Starter code provided by UNCC, week 14-MVC, mini-project
 
 ## License
 
